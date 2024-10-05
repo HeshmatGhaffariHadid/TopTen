@@ -1,63 +1,40 @@
 import 'package:flutter/material.dart';
+import 'package:top_ten/Clickable_card.dart';
+import 'package:top_ten/popup_menu.dart';
 
 void main() {
   runApp(HomePage());
 }
 
 class HomePage extends StatelessWidget {
-  String selectedOption = '';
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Top Ten Masques'),
+          title: Text('Top Ten Mosques'),
           actions: [
-            PopupMenuButton(
-              onSelected: (String selected) {
-                selectedOption = selected;
-              },
-              itemBuilder: (BuildContext context) => [
-                PopupMenuItem(
-                  value: 'share',
-                  child: Text('Share the app'),
-                ),
-                PopupMenuItem(
-                  value: 'about',
-                  child: Text('About'),
-                ),
-                PopupMenuItem(
-                  value: 'exit',
-                  child: Text('Exit'),
-                ),
-              ],
-            ),
+            PopUpMenu(),
           ],
         ),
         body: Padding(
           padding: const EdgeInsets.all(4.0),
           child: Column(
             children: [
-              GestureDetector(
-                onTap: (){
-print('hello');
-                },
-                child: Container(
-                  height: 70,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(10),
-                    border: Border.all(color: Colors.blue.shade800),
-                  ),
-                  child: Center(
-                    child: Text('Makah',
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 22,
-                            fontWeight: FontWeight.bold)),
-                  ),
+              Expanded(
+                child: Column(
+                  children: [
+                    ClickableCard(title: 'Masjid al-Haram'),
+                    ClickableCard(title: 'Masjid an-Nabwi'),
+                    ClickableCard(title: 'Sheikh Zahid Grand Masjid'),
+                    ClickableCard(title: 'Sultan Ahmad Masjid'),
+                    ClickableCard(title: 'Hassan II Masjid'),
+                    ClickableCard(title: 'Al-Aqsa Masjid'),
+                    ClickableCard(title: 'Sheikh Lotfollah Masjid'),
+                    ClickableCard(title: 'Badshahi Masjid'),
+                    ClickableCard(title: 'Catheral Masjid'),
+                    ClickableCard(title: 'Masjid e Nabwi Madina'),
+                  ],
                 ),
               ),
             ],
