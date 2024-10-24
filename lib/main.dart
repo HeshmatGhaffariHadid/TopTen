@@ -8,9 +8,9 @@ void main() => runApp(
         debugShowCheckedModeBanner: false,
         initialRoute: '/',
         routes: {
-          '/' : (context) => SplashScreen(),
-          '/about' : (context) => AboutPage(),
-          '/home' : (context) => HomeScreen(),
+          '/' : (context) => const SplashScreen(),
+          '/about' : (context) => const AboutPage(),
+          '/home' : (context) => const HomeScreen(),
         },
         // home: SplashScreen(),
       ),

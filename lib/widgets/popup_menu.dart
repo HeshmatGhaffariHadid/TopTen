@@ -8,12 +8,12 @@ class PopUpMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PopupMenuButton(
-      color: Color(0xFF4f3222),
+      color: const Color(0xFF4f3222),
       onSelected: (String selected) {
         selectedOption = selected;
       },
       itemBuilder: (BuildContext context) => [
-        PopupMenuItem(
+        const PopupMenuItem(
           value: 'share',
           child: Text('Share the app',style: TextStyle(
             color: Colors.white
@@ -21,7 +21,7 @@ class PopUpMenu extends StatelessWidget {
         ),
         PopupMenuItem(
           value: 'about',
-          child: Text('About Us',style: TextStyle(
+          child: const Text('About Us',style: TextStyle(
               color: Colors.white
           ),),
           onTap: () {
@@ -35,7 +35,7 @@ class PopUpMenu extends StatelessWidget {
         ),
         PopupMenuItem(
           value: 'exit',
-          child: Text('Exit App',style: TextStyle(
+          child: const Text('Exit App',style: TextStyle(
               color: Colors.white
           ),),
           onTap: () {

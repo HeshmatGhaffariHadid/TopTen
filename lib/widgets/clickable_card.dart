@@ -5,10 +5,10 @@ class ClickableCard extends StatelessWidget {
   final String name;
   final String description;
   final String imageName;
-  ClickableCard({required this.imageName,required this.name, required this.description});
+  const ClickableCard({super.key, required this.imageName,required this.name, required this.description});
+
+  @override
   Widget build(BuildContext context) {
-
-
     return Padding(
       padding: const EdgeInsets.all(4),
       child: GestureDetector(
@@ -30,7 +30,7 @@ class ClickableCard extends StatelessWidget {
           child: Center(
             child: Text(
               name,
-              style: TextStyle(
+              style: const TextStyle(
                 letterSpacing: 1,
                 color: Color(0xFFead5ca),
                 fontSize: 20,

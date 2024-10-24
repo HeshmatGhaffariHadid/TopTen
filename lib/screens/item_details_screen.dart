@@ -5,14 +5,14 @@ class ItemDetailsScreen extends StatelessWidget {
   String name;
   String description;
 
-  ItemDetailsScreen(this.imageName, this.name, this.description);
+  ItemDetailsScreen(this.imageName, this.name, this.description, {super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF4f3222),
+      backgroundColor: const Color(0xFF4f3222),
       appBar: AppBar(
-        title: Text('Details'),
+        title: const Text('Details'),
         backgroundColor: Colors.black38,
       ),
       body: Column(
@@ -25,19 +25,20 @@ class ItemDetailsScreen extends StatelessWidget {
               children: [
                 Image.asset('images/$imageName.jpg'),
 
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Text(
                   name,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 28,
                     color: Colors.white,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Text(
                   description,
                   textAlign: TextAlign.center,
-                  style: TextStyle(
+                  style: const TextStyle(
                     letterSpacing: 1,
                     fontSize: 20,
                     color: Colors.white,
