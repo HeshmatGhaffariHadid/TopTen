@@ -15,7 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
     Masjid(
         name: 'Masjid al-Haram',
         description:
-            'Masjid al-Haram is the Muslim\'s Qeblah which is located in Mecca, Saudi Arabia, center of earth, this great and holy masjid was build by prophet Ibrahim <PUH> and this masjid is the holiest masjid in Islam that surrounds the Kaaba, and is the focal point of Hajj pilgrimage'),
+            'Masjid al-Haram is the Muslim\'s Qeblah which is located in Mecca, Saudi Arabia, center of earth, this great and holy masjid was build by prophet Ibrahim <PUH> and this masjid is the holiest masjid in Islam that surrounds the Kaaba, and is the focal point of Hajj pilgrimage.'),
     Masjid(
         name: 'Masjid an-Nabawi',
         description:
@@ -23,35 +23,35 @@ class _HomeScreenState extends State<HomeScreen> {
     Masjid(
         name: 'Al-Aqsa Masjid',
         description:
-            'Al-Aqsa masjid is located in Jerusalem, Palestine, third holiest masjid in Islam which was the first Qableh in Islam and the Meraj accident was happened their, unfortunately it\'s now under control of Jewish people, so this is our responsibility to take it back'),
+            'Al-Aqsa masjid is located in Jerusalem, Palestine, third holiest masjid in Islam which was the first Qableh in Islam and the Meraj accident was happened their, unfortunately it\'s now under control of Jewish people, so this is our responsibility to take it back.'),
     Masjid(
         name: 'Sheikh Zayed Grand Masjid',
         description:
-            'Sheikh Zayed Grand masjid is located in Abu Dhabi,UAE, it is the largest masjid in UAE, known for it\;s beautiful architecture, including domes, minarets, and intricate design'),
+            'Sheikh Zayed Grand masjid is located in Abu Dhabi,UAE, it is the largest masjid in UAE, known for it\;s beautiful architecture, including domes, minarets, and intricate design.'),
     Masjid(
         name: 'Sultan Ahmad Masjid',
         description:
-            'Sultan Ahmad masjid is popular as Blue Masjid in Istanbul, Turkey, it is a iconic masjid with stunning blue tiles, six minarets, and intricate calligraphy, blending Islam and Ottoman architecture'),
+            'Sultan Ahmad masjid is popular as Blue Masjid in Istanbul, Turkey, it is a iconic masjid with stunning blue tiles, six minarets, and intricate calligraphy, blending Islam and Ottoman architecture.'),
     Masjid(
         name: 'Hasan II Masjid',
         description:
-            'Hasan II masjid is located in Casablanca, Morocco, one of the largest masjids in the world, overlooking the Atlantic Ocean, featuring intricate mosaics and a towering minaret'),
+            'Hasan II masjid is located in Casablanca, Morocco, one of the largest masjids in the world, overlooking the Atlantic Ocean, featuring intricate mosaics and a towering minaret.'),
     Masjid(
         name: 'Sheikh Lotfollah Masjid',
         description:
-            'Sheikh Lotfollah masjid is located in Isfahan, Iran, masterpiece od Persian architecture, known for it\'s stunning dome, intricate tile work, and beautiful iwans'),
+            'Sheikh Lotfollah masjid is located in Isfahan, Iran, masterpiece of Persian architecture, known for it\'s stunning dome, intricate tile work, and beautiful iwans.'),
     Masjid(
         name: 'Badshahi Masjid',
         description:
-            'Badshahi masjid is located in Lahore, Pakistan, one of the largest masjid from the Mughal era, known for it\'s grandeur and historical significance'),
+            'Badshahi masjid is located in Lahore, Pakistan, one of the largest masjid from the Mughal era, known for it\'s grandeur and historical significance.'),
     Masjid(
         name: 'Quba Masjid',
         description:
-            'Quba masjid is located in Madina city of Saudi Arabia, this is the oldest masjid in the Islam which was built by Prophet Muhammad <PUH>, and holds spiritual significance for muslims '),
+            'Quba masjid is located in Madina city of Saudi Arabia, this is the oldest masjid in the Islam which was built by Prophet Muhammad <PUH>, and holds spiritual significance for muslims. '),
     Masjid(
         name: 'Faisal Masjid',
         description:
-            'Faisal masjid is located in Islamabad Pakistan, known for it\'s unique contemporary design inspired by Bedouin tents'),
+            'Faisal masjid is located in Islamabad Pakistan, known for it\'s unique contemporary design inspired by Bedouin tents.'),
   ];
 
   String imageName(int index) {

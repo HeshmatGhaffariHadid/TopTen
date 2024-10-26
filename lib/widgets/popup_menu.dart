@@ -29,7 +29,7 @@ class PopUpMenu extends StatelessWidget {
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>AboutPage(),),);
 
                 },
-                child: const Text('About Us',style: TextStyle(
+                child: const Text('About',style: TextStyle(
                     color: Colors.white
                 ),),
               );
@@ -47,7 +47,7 @@ class PopUpMenu extends StatelessWidget {
         ),
         PopupMenuItem(
           value: 'exit',
-          child: const Text('Exit App',style: TextStyle(
+          child: const Text('Exit app',style: TextStyle(
               color: Colors.white
           ),),
           onTap: () {

@@ -16,7 +16,7 @@ class ItemDetailsScreen extends StatelessWidget {
         backgroundColor: Colors.black38,
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        // mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Expanded(
             child: Column(
@@ -26,25 +26,33 @@ class ItemDetailsScreen extends StatelessWidget {
                 Image.asset('images/$imageName.jpg'),
 
                 const SizedBox(height: 10),
-                Text(
-                  name,
-                  style: const TextStyle(
-                    fontSize: 28,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                  ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                    Text(
+                      '$name',
+                      style: const TextStyle(
+                        fontSize: 28,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    Text(
+                      '   $description',
+                      textAlign: TextAlign.start,
+                      style: const TextStyle(
+                        height: 1.2,
+                        letterSpacing: 1,
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],),
                 ),
-                const SizedBox(height: 10),
-                Text(
-                  description,
-                  textAlign: TextAlign.start,
-                  style: const TextStyle(
-                    height: 1.2,
-                    letterSpacing: 1,
-                    fontSize: 20,
-                    color: Colors.white,
-                  ),
-                ),
+
               ],
             ),
           ),

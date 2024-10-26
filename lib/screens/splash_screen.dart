@@ -16,7 +16,7 @@ class SplashScreen extends StatelessWidget {
           Expanded(child: Image.asset('images/IMG_1479.PNG')),
           const Text('Welcome to Top Ten',textAlign: TextAlign.center,style: TextStyle(
             fontSize: 20,
-            color: Color(0xFFdfff80),
+            color: Color(0xFFffffcc),
             fontWeight: FontWeight.bold,
           ),),
         ],
