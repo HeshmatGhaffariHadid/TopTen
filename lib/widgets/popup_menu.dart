@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:top_ten/screens/item_details_screen.dart';
+import 'package:top_ten/screens/about_page.dart';
+import 'package:top_ten/screens/splash_screen.dart';
 
 class PopUpMenu extends StatelessWidget {
   late final String selectedOption;
@@ -21,14 +22,25 @@ class PopUpMenu extends StatelessWidget {
         ),
         PopupMenuItem(
           value: 'about',
-          child: const Text('About Us',style: TextStyle(
-              color: Colors.white
-          ),),
+          child:Builder(
+            builder: (context){
+              return GestureDetector(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>AboutPage(),),);
+
+                },
+                child: const Text('About Us',style: TextStyle(
+                    color: Colors.white
+                ),),
+              );
+            },
+
+          ),
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => ItemDetailsScreen('','',''),
+                builder: (context) => const SplashScreen(),
               ),
             );
           },

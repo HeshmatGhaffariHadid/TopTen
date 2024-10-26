@@ -29,25 +29,25 @@ class _HomeScreenState extends State<HomeScreen> {
         description:
             'Sheikh Zayed Grand masjid is located in Abu Dhabi,UAE, it is the largest masjid in UAE, known for it\;s beautiful architecture, including domes, minarets, and intricate design'),
     Masjid(
-        name: 'Sultan Ahmad masjid',
+        name: 'Sultan Ahmad Masjid',
         description:
             'Sultan Ahmad masjid is popular as Blue Masjid in Istanbul, Turkey, it is a iconic masjid with stunning blue tiles, six minarets, and intricate calligraphy, blending Islam and Ottoman architecture'),
     Masjid(
-        name: 'Hassan II masjid',
+        name: 'Hasan II Masjid',
         description:
-            'Hassan II masjid is located in Casablanca, Morocco, one of the largest masjids in the world, overlooking the Atlantic Ocean, featuring intricate mosaics and a towering minaret'),
+            'Hasan II masjid is located in Casablanca, Morocco, one of the largest masjids in the world, overlooking the Atlantic Ocean, featuring intricate mosaics and a towering minaret'),
     Masjid(
-        name: 'Sheikh Lotfollah masjid',
+        name: 'Sheikh Lotfollah Masjid',
         description:
             'Sheikh Lotfollah masjid is located in Isfahan, Iran, masterpiece od Persian architecture, known for it\'s stunning dome, intricate tile work, and beautiful iwans'),
     Masjid(
         name: 'Badshahi Masjid',
         description:
-            'Badshahi masjid in located in Lahore, Pakistan, one of the largest masjid from the Mughal era, known for it\'s grandeur and historical significance'),
+            'Badshahi masjid is located in Lahore, Pakistan, one of the largest masjid from the Mughal era, known for it\'s grandeur and historical significance'),
     Masjid(
         name: 'Quba Masjid',
         description:
-            'Quba masjid located in Madina city of Saudi Arabia, this is the oldest masjid in the Islam which was built by Prophet Muhammad <PUH>, and holds spiritual significance for muslims '),
+            'Quba masjid is located in Madina city of Saudi Arabia, this is the oldest masjid in the Islam which was built by Prophet Muhammad <PUH>, and holds spiritual significance for muslims '),
     Masjid(
         name: 'Faisal Masjid',
         description:
@@ -98,9 +98,10 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: const Color(0xFF4f3222),
       appBar: AppBar(
         title: const Text(
-          'Top Ten Masjeds',
+          'Top Ten Masjids',
           style: TextStyle(
             letterSpacing: 1,
+            color:Color(0xFFead5ca),
           ),
         ),
         backgroundColor: Colors.black38,

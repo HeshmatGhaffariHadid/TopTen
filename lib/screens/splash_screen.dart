@@ -9,9 +9,19 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedSplashScreen(
       centered: true,
-      splashIconSize: 320,
-      splash: Image.asset('images/IMG_1479.PNG'),
-      duration: 2500,
+      splashIconSize: 300,
+      splash: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Expanded(child: Image.asset('images/IMG_1479.PNG')),
+          const Text('Welcome to Top Ten',textAlign: TextAlign.center,style: TextStyle(
+            fontSize: 20,
+            color: Color(0xFFdfff80),
+            fontWeight: FontWeight.bold,
+          ),),
+        ],
+      ),
+      duration: 2000,
       nextScreen: const HomeScreen(),
       splashTransition: SplashTransition.fadeTransition,
       backgroundColor: const Color(0xFF4f3222),

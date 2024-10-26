@@ -20,7 +20,7 @@ class ItemDetailsScreen extends StatelessWidget {
         children: [
           Expanded(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Image.asset('images/$imageName.jpg'),
@@ -37,8 +37,9 @@ class ItemDetailsScreen extends StatelessWidget {
                 const SizedBox(height: 10),
                 Text(
                   description,
-                  textAlign: TextAlign.center,
+                  textAlign: TextAlign.start,
                   style: const TextStyle(
+                    height: 1.2,
                     letterSpacing: 1,
                     fontSize: 20,
                     color: Colors.white,
